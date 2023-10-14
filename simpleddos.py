@@ -10,8 +10,7 @@ if showcontentraw=="Y" or showcontentraw=="y":
 else:
     showcontent=False
 try:
-    while True:
-        clear()
+    while True:        
         counter+=1
         requests.get(url)
         requests.get(url)
@@ -23,6 +22,7 @@ try:
             brick="false, authorization is required"
         else:
             brick="false"
+        clear()
         print(f"Request pack #{counter}\nHTTP code - {r.status_code}\nIs brick - {brick}")
 except:
     print("You entered wrong URL or you don't have internet connection.")
