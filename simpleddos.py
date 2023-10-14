@@ -23,6 +23,6 @@ try:
         else:
             brick="false"
         clear()
-        print(f"Request pack #{counter}\nHTTP code - {r.status_code}\nIs brick - {brick}")
+        print(f"Request pack #{counter}\nURL - {url}\nHTTP code - {r.status_code}\nIs brick - {brick}")
 except:
     print("You entered wrong URL or you don't have internet connection.")
